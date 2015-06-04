@@ -151,4 +151,5 @@ The nlog belief values in the table for this example are arbitrary. You can set 
 
 Once the evidence has been propagated across the distributed graph and the results pulled back into the factor graph using factor_graph.hpp::pull_beliefs_for_variables(), the resulting marginal distribution for the variable var can be queried using factor_graph.hpp::belief_for_variable(var), which returns a 1D dense_table. Then, you can find the most likely value in the distribution using dense_table::max_index(), which returns the linear index of the largest value.
 
+MR: Need to add the capability to assign factors to clusters and to create a cluster graph from which various inference methods can be run sequentially or in parallel
 */
